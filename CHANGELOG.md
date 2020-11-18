@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 # 0.9.0 - 2020-11-18
 ## Added
+- Is now a Python package
+
+## Fixed
+
+## Changed
+
+
+# 0.9.0 - 2020-11-18
+## Added
 - Created from https://stackoverflow.com/a/51916936/2445204
 - Documented origin, license
 - Improved code readability

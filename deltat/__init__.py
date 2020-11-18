@@ -9,6 +9,10 @@
 import re
 from datetime import timedelta
 
+
+VERSION = "0.9.0+"
+
+
 regex = re.compile(r'^((?P<days>[\.\d]+?)d)? *'
                    r'((?P<hours>[\.\d]+?)h)? *'
                    r'((?P<minutes>[\.\d]+?)m)? *'
