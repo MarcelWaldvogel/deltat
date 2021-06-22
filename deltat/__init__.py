@@ -10,14 +10,14 @@ import re
 from datetime import timedelta
 
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 
 regex = re.compile(r'^((?P<weeks>[\.\d]+?)w)? *'
                    r'^((?P<days>[\.\d]+?)d)? *'
                    r'((?P<hours>[\.\d]+?)h)? *'
                    r'((?P<minutes>[\.\d]+?)m)? *'
-                   r'((?P<seconds>[\.\d]+?)s)?$')
+                   r'((?P<seconds>[\.\d]+?)s?)?$')
 
 
 def parse_time(time_str):
