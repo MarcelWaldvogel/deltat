@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
 
+# 1.0.1+ - [Unreleased]
+## Added
+
+## Fixed
+- Week support did not work at all; weeks could not be used
+
+## Changed
+
+
 # 1.0.1 - 2021-06-22
 ## Added
 - The trailing `s` for seconds is now optional
