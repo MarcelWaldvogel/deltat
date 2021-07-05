@@ -7,13 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 # 1.0.1+ - [Unreleased]
 ## Added
+- Test cases, finally!
 
 ## Fixed
 - Week support did not work at all; weeks could not be used
 
 ## Changed
 - No longer throws an `AssertionError` on unparseable strings, but our own
-  `TimeFormatError`, a subclass of `ValueError`.
+  `TimeFormatError`, a subclass of `ValueError`. (Floating-point parsing
+  errors continue to return `ValueError`, so you can catch both with that
+  exception.)
 
 
 # 1.0.1 - 2021-06-22

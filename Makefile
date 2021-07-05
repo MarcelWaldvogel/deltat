@@ -5,4 +5,8 @@ python-package:
 pypi:	python-package
 	twine upload dist/*
 
-.PHONY: python-package pypi
+test:	tests
+tests:
+	nosetests3
+
+.PHONY: python-package pypi tests test
