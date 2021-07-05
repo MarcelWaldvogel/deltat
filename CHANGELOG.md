@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Week support did not work at all; weeks could not be used
 
 ## Changed
+- No longer throws an `AssertionError` on unparseable strings, but our own
+  `TimeFormatError`, a subclass of `ValueError`.
 
 
 # 1.0.1 - 2021-06-22

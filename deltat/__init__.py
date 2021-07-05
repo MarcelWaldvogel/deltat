@@ -20,6 +20,10 @@ regex = re.compile(r'^((?P<weeks>[\.\d]+?)w)? *'
                    r'((?P<seconds>[\.\d]+?)s?)?$')
 
 
+class TimeFormatError(ValueError):
+    pass
+
+
 def parse_time(time_str):
     """
     Parse a time string e.g. '2h 13m' or '1.5d' into a timedelta object.
@@ -31,8 +35,11 @@ def parse_time(time_str):
     :return datetime.timedelta: A datetime.timedelta object
     """
     parts = regex.match(time_str)
-    assert parts is not None, """Could not parse any time information from '{}'.
-    Examples of valid strings: '8h', '2d 8h 5m 2s', '2m4.3s'""".format(time_str)
+    if parts is None:
+        raise TimeFormatError(
+            "Could not parse any time information from '%s'. "
+            "Examples of valid strings: "
+            "'8h', '2d 8h 5m 2s', '2m4.3s'""" % time_str)
     time_params = {name: float(param)
                    for name, param in parts.groupdict().items() if param}
     return timedelta(**time_params)
