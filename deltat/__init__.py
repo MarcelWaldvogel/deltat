@@ -10,7 +10,7 @@ import re
 from datetime import timedelta
 
 
-VERSION = "1.1.1"
+VERSION = "1.1.2"
 
 
 regex = re.compile(r'^((?P<weeks>[\.\d]+?)w)? *'
