@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
 
+# 1.1.2 - 2021-11-18
+## Added
+
+## Fixed
+- `project_url`, not `package_url`
+
+## Changed
+
+
 # 1.1.1 - 2021-11-18
 ## Added
 

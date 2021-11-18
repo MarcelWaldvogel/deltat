@@ -28,7 +28,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://gitlab.com/MarcelWaldvogel/deltat",
-    package_urls={
+    project_urls={
         "Source": "https://gitlab.com/MarcelWaldvogel/deltat",
         "Source Code": "https://github.com/MarcelWaldvogel/deltat",
         },
