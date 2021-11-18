@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - `project_url`, not `package_url`
 
 ## Changed
+- Clean `build` directory first
 
 
 # 1.1.1 - 2021-11-18
