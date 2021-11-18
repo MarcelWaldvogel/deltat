@@ -3,14 +3,14 @@
 # deltat.py — Parse a time duration
 #
 # License unknown, based on work by virhilo and Peter on Stackoverflow
-# Modified by Marcel Waldvogel
+# Modified and packaged by Marcel Waldvogel
 #
 
 import re
 from datetime import timedelta
 
 
-VERSION = "1.1.0"
+VERSION = "1.1.1"
 
 
 regex = re.compile(r'^((?P<weeks>[\.\d]+?)w)? *'
